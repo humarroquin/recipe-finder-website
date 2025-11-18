@@ -1,7 +1,11 @@
 /* Navbar */
+.header__container {
+  padding-block: var(--spacing-600);
+}
+
 .navbar {
   justify-content: space-between;
-  padding-block: var(--spacing-600);
+  align-items: center;
 }
 
 .navbar__logo {
@@ -26,7 +30,7 @@
   bottom: -2px;
   border-radius: var(--radius-4);
   opacity: 0;
-  transition: opacity 0.5s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 
 .navbar__list a:hover::after {
@@ -42,7 +46,18 @@
   border-radius: var(--radius-10);
   padding: var(--spacing-300) var(--spacing-400);
 }
-.navbar__cta {
+.btn--main {
   background-color: var(--neutral-900);
   color: var(--neutral-0);
+}
+
+/* footer */
+.footer__container {
+  justify-content: space-between;
+  padding-block: var(--spacing-800);
+}
+
+.footer__social-list {
+  align-items: center;
+  gap: var(--spacing-600);
 }
