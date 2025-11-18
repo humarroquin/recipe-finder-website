@@ -1,4 +1,4 @@
-/* Font sizes */
+/* font sizes */
 .fs-300 {
   font-size: var(--fs-300);
 }
@@ -33,7 +33,20 @@
   font-size: var(--fs-950);
 }
 
-/* Font weights */
+/* fluid fonts */
+.h1 {
+  font-size: 3.25rem;
+  font-size: clamp(
+    3.25rem,
+    2.8098591549295775rem + 1.8779342723004695vw,
+    4.5rem
+  );
+  font-weight: var(--fw-800);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-tight-5);
+}
+
+/* font weights */
 .fw-400 {
   font-weight: var(--fw-400);
 }
@@ -50,7 +63,7 @@
   font-weight: var(--fw-800);
 }
 
-/* Line heights */
+/* line heights */
 .lh-1 {
   line-height: var(--lh-1);
 }
@@ -67,7 +80,7 @@
   line-height: var(--lh-relaxed);
 }
 
-/* Letter spacing */
+/* letter spacing */
 .ls-tight-1 {
   letter-spacing: var(--ls-tight-1);
 }

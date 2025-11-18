@@ -1,11 +1,21 @@
-/* Navbar */
-.header__container {
-  padding-block: var(--spacing-600);
+/* buttons */
+.btn {
+  border: 0;
+  font-size: var(--fs-500);
+  font-weight: var(--fw-700);
+  line-height: var(--lh-normal);
+  border-radius: var(--radius-10);
+  padding: var(--spacing-300) var(--spacing-400);
+  min-width: fit-content;
+}
+.btn--main {
+  background-color: var(--neutral-900);
+  color: var(--neutral-0);
 }
 
-.navbar {
-  justify-content: space-between;
-  align-items: center;
+/* navbar */
+.header__container {
+  padding-block: var(--spacing-600);
 }
 
 .navbar__logo {
@@ -37,23 +47,32 @@
   opacity: 1;
 }
 
-/* buttons */
-.btn {
-  border: 0;
-  font-size: var(--fs-500);
-  font-weight: var(--fw-700);
-  line-height: var(--lh-normal);
-  border-radius: var(--radius-10);
-  padding: var(--spacing-300) var(--spacing-400);
+/* hero */
+.hero__text {
+  max-width: 35.25rem;
+  margin-inline: auto;
 }
-.btn--main {
-  background-color: var(--neutral-900);
-  color: var(--neutral-0);
+
+.hero__highlight {
+  position: relative;
+  padding-inline: 0.1em 0.2em;
+}
+
+.hero__highlight::after {
+  content: "";
+  display: block;
+  height: 40%;
+  width: 100%;
+  background-color: var(--orange-100);
+  position: absolute;
+  left: 0;
+  bottom: 0.7rem;
+  z-index: -1;
+  border-radius: var(--radius-4);
 }
 
 /* footer */
 .footer__container {
-  justify-content: space-between;
   padding-block: var(--spacing-800);
 }
 

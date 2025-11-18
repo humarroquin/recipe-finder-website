@@ -20,9 +20,37 @@
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 /* text */
 .centered-text {
   text-align: center;
 }
 
 /* margins */
+.mb-300 {
+  margin-bottom: var(--spacing-300);
+}
+
+.mb-500 {
+  margin-bottom: var(--spacing-500);
+}
+
+.mb-800 {
+  margin-bottom: var(--spacing-800);
+}
+
+/* padding */
+.py-1100 {
+  padding-block: var(--spacing-1100);
+}
+
+.py-1200 {
+  padding-block: var(--spacing-1200);
+}

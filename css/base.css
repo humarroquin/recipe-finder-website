@@ -113,6 +113,7 @@ button {
   --neutral-200: hsl(150, 11%, 89%);
   --neutral-100: hsl(0, 9%, 98%);
   --neutral-0: hsl(0, 0%, 100%);
+  --orange-100: hsl(21, 99%, 87%);
   --orange-500: hsl(21, 99%, 71%);
   --teal-500: hsl(170, 40%, 48%);
   --indigo-500: hsl(229, 61%, 64%);
@@ -153,10 +154,10 @@ button {
   --lh-relaxed: 1.5;
 
   /* SPACING */
-  /* Base unit */
+  /* base unit */
   --spacing-base: 0.25rem; /* 4px */
 
-  /* Spacing scale */
+  /* spacing scale */
   --spacing-50: calc(var(--spacing-base) * 0.5); /* 2px */
   --spacing-100: var(--spacing-base); /* 4px */
   --spacing-150: calc(var(--spacing-base) * 1.5); /* 6px */
@@ -169,6 +170,8 @@ button {
   --spacing-800: calc(var(--spacing-base) * 10); /* 40px */
   --spacing-900: calc(var(--spacing-base) * 12); /* 48px */
   --spacing-1000: calc(var(--spacing-base) * 16); /* 64px */
+  --spacing-1100: calc(var(--spacing-base) * 20); /* 80px */
+  --spacing-1200: calc(var(--spacing-base) * 24); /* 96px */
 
   /* BORDER RADIUS */
   --radius-4: 0.25rem; /* 4px */
