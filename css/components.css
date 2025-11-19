@@ -48,6 +48,10 @@
 }
 
 /* hero */
+.hero__container {
+  position: relative;
+}
+
 .hero__text {
   max-width: 35.25rem;
   margin-inline: auto;
@@ -69,6 +73,21 @@
   bottom: 0.7rem;
   z-index: -1;
   border-radius: var(--radius-4);
+}
+
+.hero__img {
+  max-width: 74.5rem;
+  width: 100%;
+  border-radius: var(--radius-12);
+  box-shadow: 0 0 0 12px var(--neutral-0);
+}
+
+.hero__decoration {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 5rem;
+  z-index: -1;
 }
 
 /* footer */
