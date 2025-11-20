@@ -3,58 +3,40 @@
   --max-width: 75rem;
   --padding: 1rem;
 
-  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  width: min(var(--max-width), 100% - (var(--padding) * 4));
   margin-inline: auto;
-}
-
-/* layout */
-.flex {
-  display: flex;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-/* text */
-.centered-text {
-  text-align: center;
 }
 
 /* margins */
 .mb-300 {
   margin-bottom: var(--spacing-300);
-}
+} /* 12px */
 
-.mb-500 {
-  margin-bottom: var(--spacing-500);
-}
+.mb-600 {
+  margin-bottom: var(--spacing-600);
+} /* 24px */
 
 .mb-800 {
   margin-bottom: var(--spacing-800);
-}
+} /* 40px */
+
+.mb-900 {
+  margin-bottom: var(--spacing-900);
+} /* 48px */
 
 .mb-1100 {
   margin-bottom: var(--spacing-1100);
-}
+} /* 80px */
+
+.mb-1200 {
+  margin-bottom: var(--spacing-1200);
+} /* 96px */
 
 /* padding */
 .py-1100 {
   padding-block: var(--spacing-1100);
-}
+} /* 80px */
 
-.py-1200 {
-  padding-block: var(--spacing-1200);
-}
+.pb-1200 {
+  padding-bottom: var(--spacing-1200);
+} /* 96px */

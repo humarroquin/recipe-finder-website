@@ -46,6 +46,14 @@
   letter-spacing: var(--ls-tight-5);
 }
 
+.h2 {
+  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 2.323943661971831rem + 0.7511737089201878vw, 3rem);
+  font-weight: var(--fw-800);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight-5);
+}
+
 /* font weights */
 .fw-400 {
   font-weight: var(--fw-400);
