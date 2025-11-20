@@ -58,24 +58,6 @@
   margin-inline: auto;
 }
 
-.hero__highlight {
-  position: relative;
-  padding-inline: 0.1em 0.2em;
-}
-
-.hero__highlight::after {
-  content: "";
-  display: block;
-  height: 40%;
-  width: 100%;
-  background-color: var(--orange-100);
-  position: absolute;
-  left: 0;
-  bottom: 0.7rem;
-  z-index: -1;
-  border-radius: var(--radius-4);
-}
-
 .hero__img {
   max-width: 74.5rem;
   width: 100%;
@@ -118,6 +100,26 @@
 @media (max-width: 40rem) {
   .features__title {
     text-align: left;
+  }
+}
+
+/* real-life */
+.real-life__container {
+  gap: var(--spacing-900);
+}
+
+.real-life__text-wrapper {
+  max-width: 31.8125rem;
+}
+
+.real-life__image {
+  border-radius: var(--radius-16);
+}
+
+@media (max-width: 40rem) {
+  .real-life__container {
+    flex-direction: column;
+    gap: var(--spacing-800);
   }
 }
 
