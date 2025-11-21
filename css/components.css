@@ -123,6 +123,20 @@
   }
 }
 
+/* cta */
+.cta {
+  background-color: var(--neutral-200);
+  text-align: center;
+  border-radius: var(--radius-16);
+  padding-inline: var(--spacing-400);
+
+  background-image: url("../assets/images/pattern-fork.svg"),
+    url("../assets/images/pattern-knife.svg");
+  background-repeat: no-repeat;
+  background-position: -5rem 2rem, calc(100% + 5rem) 2rem;
+  background-size: 19rem 24rem, 21rem;
+}
+
 /* footer */
 .footer__container {
   padding-block: var(--spacing-800);

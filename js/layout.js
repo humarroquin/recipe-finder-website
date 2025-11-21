@@ -8,6 +8,10 @@ async function loadLayout() {
   const footerResponse = await fetch("../components/footer.html");
   const footerData = await footerResponse.text();
   document.querySelector("footer").innerHTML = footerData;
+
+  const ctaResponse = await fetch("../components/cta.html");
+  const ctaData = await ctaResponse.text();
+  document.querySelector("#cta").innerHTML = ctaData;
 }
 
 document.addEventListener("DOMContentLoaded", loadLayout);
