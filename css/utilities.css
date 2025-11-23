@@ -68,3 +68,11 @@
 .highlighted-text--small {
   --highlight-offset: 0.3rem;
 }
+
+.orange-tag-text {
+  background-color: var(--orange-500);
+  color: var(--neutral-900);
+  max-width: fit-content;
+  border-radius: var(--radius-6);
+  padding: var(--spacing-50) var(--spacing-150);
+}

@@ -1,8 +1,7 @@
 /* grid */
-.grid-3cols-even {
+.grid-even-cols {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
-  gap: var(--spacing-700);
 }
 
 /* flexbox */

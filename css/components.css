@@ -47,6 +47,12 @@
   opacity: 1;
 }
 
+/* 
+----------------------------------------------
+Home Page
+----------------------------------------------
+*/
+
 /* hero */
 .hero__container {
   position: relative;
@@ -97,6 +103,10 @@
   justify-content: center;
 }
 
+.features__list {
+  gap: var(--spacing-700);
+}
+
 @media (max-width: 40rem) {
   .features__title {
     text-align: left;
@@ -145,4 +155,18 @@
 .footer__social-list {
   align-items: center;
   gap: var(--spacing-600);
+}
+
+/* 
+----------------------------------------------
+About Page
+----------------------------------------------
+*/
+
+.mission-container {
+  gap: var(--spacing-1000);
+}
+
+.mission__image {
+  border-radius: var(--radius-16);
 }
