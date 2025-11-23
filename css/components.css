@@ -200,3 +200,32 @@ About Page
     gap: var(--spacing-800);
   }
 }
+
+/* beyond the plate */
+.beyond-plate__container {
+  gap: var(--spacing-1000);
+  align-items: start;
+}
+
+.beyond-plate__text {
+  max-width: 376px;
+}
+
+.beyond-plate__list {
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+.beyond-plate__image {
+  border-radius: var(--radius-16);
+}
+
+@media (max-width: 40rem) {
+  .beyond-plate__container {
+    flex-direction: column;
+    gap: var(--spacing-800);
+  }
+  .beyond-plate__text {
+    max-width: 100%;
+  }
+}
