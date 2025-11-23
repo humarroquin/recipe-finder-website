@@ -29,6 +29,14 @@
   letter-spacing: var(--ls-tight-4);
 }
 
+.h4 {
+  font-family: var(--ff-headings);
+  font-size: var(--fs-550);
+  font-weight: var(--fw-700);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-tight-4);
+}
+
 .text-preset-6 {
   font-size: var(--fs-500);
   font-weight: var(--fw-700);

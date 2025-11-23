@@ -41,8 +41,12 @@
   padding-block: var(--spacing-1100);
 } /* 80px */
 
-.pb-1200 {
+.py-1200 {
   padding-block: var(--spacing-1200);
+} /* 96px */
+
+.pb-1200 {
+  padding-bottom: var(--spacing-1200);
 } /* 96px */
 
 /* text highlight */

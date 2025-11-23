@@ -163,10 +163,40 @@ About Page
 ----------------------------------------------
 */
 
+/* hero */
 .mission-container {
   gap: var(--spacing-1000);
 }
 
 .mission__image {
   border-radius: var(--radius-16);
+}
+
+/* why-exist */
+.about-list__section {
+  gap: var(--spacing-1000);
+}
+
+.about-list__title {
+  flex-shrink: 0;
+}
+
+.about-list__list {
+  max-width: 756px;
+  margin-left: auto;
+}
+
+.about-list__list-item {
+  gap: var(--spacing-500);
+}
+
+.bullet-point-arrow {
+  min-width: 32px;
+}
+
+@media (max-width: 40rem) {
+  .about-list__section {
+    flex-direction: column;
+    gap: var(--spacing-800);
+  }
 }
