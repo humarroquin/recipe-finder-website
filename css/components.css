@@ -8,6 +8,7 @@
   padding: var(--spacing-300) var(--spacing-400);
   min-width: fit-content;
 }
+
 .btn--main {
   background-color: var(--neutral-900);
   color: var(--neutral-0);
@@ -67,7 +68,6 @@ Home Page
 .hero__img {
   max-width: 74.5rem;
   width: 100%;
-  border-radius: var(--radius-12);
   box-shadow: 0 0 0 12px var(--neutral-0);
 }
 
@@ -122,10 +122,6 @@ Home Page
   max-width: 31.8125rem;
 }
 
-.real-life__image {
-  border-radius: var(--radius-16);
-}
-
 @media (max-width: 40rem) {
   .real-life__container {
     flex-direction: column;
@@ -137,7 +133,6 @@ Home Page
 .cta {
   background-color: var(--neutral-200);
   text-align: center;
-  border-radius: var(--radius-16);
   padding-inline: var(--spacing-400);
 
   background-image: url("../assets/images/pattern-fork.svg"),
@@ -166,10 +161,6 @@ About Page
 /* hero */
 .mission-container {
   gap: var(--spacing-1000);
-}
-
-.mission__image {
-  border-radius: var(--radius-16);
 }
 
 /* why-exist */
@@ -214,10 +205,6 @@ About Page
 .beyond-plate__list {
   list-style: disc;
   padding-left: 2rem;
-}
-
-.beyond-plate__image {
-  border-radius: var(--radius-16);
 }
 
 @media (max-width: 40rem) {

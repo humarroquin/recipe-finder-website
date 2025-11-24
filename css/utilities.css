@@ -80,3 +80,16 @@
   border-radius: var(--radius-6);
   padding: var(--spacing-50) var(--spacing-150);
 }
+
+/* border radius */
+.br-12 {
+  border-radius: var(--radius-12);
+}
+
+.br-16 {
+  border-radius: var(--radius-16);
+}
+
+.br-20 {
+  border-radius: var(--radius-20);
+}
