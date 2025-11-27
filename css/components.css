@@ -1,20 +1,8 @@
-/* buttons */
-.btn {
-  border: 0;
-  font-size: var(--fs-500);
-  font-weight: var(--fw-700);
-  line-height: var(--lh-normal);
-  border-radius: var(--radius-10);
-  padding: var(--spacing-300) var(--spacing-400);
-  min-width: fit-content;
-}
-
-.btn--main {
-  background-color: var(--neutral-900);
-  color: var(--neutral-0);
-}
-
-/* navbar */
+/* 
+----------------------------------------------
+navigation
+---------------------------------------------- 
+*/
 .header__container {
   padding-block: var(--spacing-600);
 }
@@ -50,10 +38,60 @@
 
 /* 
 ----------------------------------------------
-Home Page
+cta
 ----------------------------------------------
 */
+.cta {
+  background-color: var(--neutral-200);
+  text-align: center;
+  padding-inline: var(--spacing-400);
 
+  background-image: url("../assets/images/pattern-fork.svg"),
+    url("../assets/images/pattern-knife.svg");
+  background-repeat: no-repeat;
+  background-position: -5rem 2rem, calc(100% + 5rem) 2rem;
+  background-size: 19rem 24rem, 21rem;
+}
+
+/* 
+----------------------------------------------
+footer
+----------------------------------------------
+*/
+.footer__container {
+  padding-block: var(--spacing-800);
+}
+
+.footer__social-list {
+  align-items: center;
+  gap: var(--spacing-600);
+}
+
+/* 
+----------------------------------------------
+buttons
+----------------------------------------------
+*/
+.btn {
+  border: 0;
+  font-size: var(--fs-500);
+  font-weight: var(--fw-700);
+  line-height: var(--lh-normal);
+  border-radius: var(--radius-10);
+  padding: var(--spacing-300) var(--spacing-400);
+  min-width: fit-content;
+}
+
+.btn--main {
+  background-color: var(--neutral-900);
+  color: var(--neutral-0);
+}
+
+/* 
+----------------------------------------------
+home
+----------------------------------------------
+*/
 /* hero */
 .hero__container {
   position: relative;
@@ -129,47 +167,28 @@ Home Page
   }
 }
 
-/* cta */
-.cta {
-  background-color: var(--neutral-200);
-  text-align: center;
-  padding-inline: var(--spacing-400);
-
-  background-image: url("../assets/images/pattern-fork.svg"),
-    url("../assets/images/pattern-knife.svg");
-  background-repeat: no-repeat;
-  background-position: -5rem 2rem, calc(100% + 5rem) 2rem;
-  background-size: 19rem 24rem, 21rem;
-}
-
-/* footer */
-.footer__container {
-  padding-block: var(--spacing-800);
-}
-
-.footer__social-list {
-  align-items: center;
-  gap: var(--spacing-600);
-}
-
 /* 
 ----------------------------------------------
-About Page
+About
 ----------------------------------------------
 */
 
 /* hero */
-.mission-container {
+.mission__container {
   gap: var(--spacing-1000);
 }
 
 /* why-exist */
-.about-list__section {
+.about-list__container {
   gap: var(--spacing-1000);
 }
 
-.about-list__title {
+.about-list__title-wrapper {
   flex-shrink: 0;
+}
+
+.about-list__philosophy-title {
+  max-width: 10ch;
 }
 
 .about-list__list {
@@ -181,7 +200,7 @@ About Page
   gap: var(--spacing-500);
 }
 
-.bullet-point-arrow {
+.about-list__icon {
   min-width: 32px;
 }
 
