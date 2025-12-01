@@ -37,11 +37,18 @@
   letter-spacing: var(--ls-tight-4);
 }
 
-.text-preset-6 {
+.text-preset-5 {
   font-size: var(--fs-500);
   font-weight: var(--fw-700);
   line-height: var(--lh-normal);
   letter-spacing: var(--ls-tight-3);
+}
+
+.text-preset-6 {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-500);
+  line-height: var(--lh-relaxed);
+  letter-spacing: var(--ls-tight-2);
 }
 
 /* font weights */

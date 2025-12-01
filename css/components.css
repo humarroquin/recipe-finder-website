@@ -72,19 +72,26 @@ footer
 buttons
 ----------------------------------------------
 */
-.btn {
+.btn-outline {
   border: 0;
   font-size: var(--fs-500);
   font-weight: var(--fw-700);
   line-height: var(--lh-normal);
   border-radius: var(--radius-10);
   padding: var(--spacing-300) var(--spacing-400);
-  min-width: fit-content;
+  cursor: pointer;
+  display: inline-flex;
 }
 
-.btn--main {
+.btn--primary {
   background-color: var(--neutral-900);
   color: var(--neutral-0);
+}
+
+.btn--pill {
+  border-radius: var(--radius-full);
+  padding: var(--spacing-300) var(--spacing-700);
+  text-transform: capitalize;
 }
 
 /* 
@@ -95,7 +102,6 @@ home
 /* hero */
 .hero__container {
   position: relative;
-  text-align: center;
 }
 
 .hero__text {
@@ -115,12 +121,6 @@ home
   left: 0;
   bottom: 5rem;
   z-index: -1;
-}
-
-@media (max-width: 40rem) {
-  .hero__container {
-    text-align: left;
-  }
 }
 
 /* features */
@@ -169,10 +169,9 @@ home
 
 /* 
 ----------------------------------------------
-About
+about
 ----------------------------------------------
 */
-
 /* hero */
 .mission__container {
   gap: var(--spacing-1000);
@@ -234,4 +233,16 @@ About
   .beyond-plate__text {
     max-width: 100%;
   }
+}
+
+/* 
+----------------------------------------------
+recipe
+----------------------------------------------
+*/
+
+/* recipes list */
+.recipe__details {
+  gap: var(--spacing-200) var(--spacing-400);
+  max-width: 20rem;
 }

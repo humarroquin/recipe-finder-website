@@ -101,10 +101,6 @@ ol {
   padding: 0;
 }
 
-button {
-  cursor: pointer;
-}
-
 /* VARIABLES */
 :root {
   --neutral-900: hsl(170, 45%, 16%);
