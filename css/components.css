@@ -92,6 +92,8 @@ buttons
   border-radius: var(--radius-full);
   padding: var(--spacing-300) var(--spacing-700);
   text-transform: capitalize;
+  width: 100%;
+  justify-content: center;
 }
 
 /* 
@@ -240,9 +242,26 @@ about
 recipe
 ----------------------------------------------
 */
-
 /* recipes list */
 .recipe__details {
   gap: var(--spacing-200) var(--spacing-400);
   max-width: 20rem;
+}
+
+.recipes__list-container {
+  gap: var(--spacing-700);
+}
+
+.recipes__list-container li {
+  background-color: var(--neutral-0);
+  padding: var(--spacing-200);
+  border-radius: var(--radius-10);
+}
+
+.recipes__list-container li img {
+  border-radius: inherit;
+}
+
+.recipes__list-container button {
+  margin-top: auto;
 }

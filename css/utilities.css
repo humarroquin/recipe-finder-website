@@ -12,6 +12,10 @@
   margin-bottom: var(--spacing-300);
 } /* 12px */
 
+.mb-400 {
+  margin-bottom: var(--spacing-400);
+} /* 16px */
+
 .mb-500 {
   margin-bottom: var(--spacing-500);
 } /* 20px */
