@@ -2,36 +2,35 @@
 
 // load navigation, cta and footer all pages
 async function loadLayout() {
-  const headerResponse = await fetch("../components/header.html");
+  const headerResponse = await fetch("./components/header.html");
   const headerData = await headerResponse.text();
   document.querySelector("header").innerHTML = headerData;
 
-  const footerResponse = await fetch("../components/footer.html");
+  const footerResponse = await fetch("./components/footer.html");
   const footerData = await footerResponse.text();
   document.querySelector("footer").innerHTML = footerData;
 
-  const ctaResponse = await fetch("../components/cta.html");
+  const ctaResponse = await fetch("./components/cta.html");
   const ctaData = await ctaResponse.text();
-  document.querySelector("#cta").innerHTML = ctaData;
+  const cta = document.querySelector("#cta");
+  if (cta) {
+    cta.innerHTML = ctaData;
+  }
 }
-
-document.addEventListener("DOMContentLoaded", loadLayout);
 
 // load recipes to page
 async function getData() {
   const response = await fetch("./js/data.json");
+
   if (!response.ok) {
-    throw new Error("Couldn't fetch data.");
+    throw new Error(`Failed to fetch data: ${response.status}`);
   }
 
-  const data = await response.json();
-  return data;
+  return response.json();
 }
 
-async function createRecipeCards() {
-  const data = await getData();
-  const recipes = data.map((recipe) => {
-    return `
+function recipeCardTemplate(recipe) {
+  return `
      <li class="flex flex-column">
             <img
               src="${recipe.image.large}"
@@ -61,9 +60,30 @@ async function createRecipeCards() {
             </button>
           </li>
     `;
-  });
-  document.querySelector(".recipes__list-container").innerHTML =
-    recipes.join("");
 }
 
-createRecipeCards();
+async function createRecipeCards() {
+  const container = document.querySelector(".recipes__list-container");
+
+  if (!container) return;
+
+  try {
+    const data = await getData();
+
+    if (!Array.isArray(data)) {
+      throw new Error("Data is not an array");
+    }
+
+    container.innerHTML = data
+      .map((recipe) => recipeCardTemplate(recipe))
+      .join("");
+  } catch (error) {
+    console.error(error);
+    container.innerHTML = "<p>Could not load recipes.</p>";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadLayout();
+  createRecipeCards();
+});
