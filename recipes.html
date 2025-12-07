@@ -36,12 +36,26 @@
       </section>
 
       <section class="recipes__container | container">
-        <ul class="recipes__list-container | grid-even-cols">
+        <div class="recipe__control-container">
+          <div class="left-controls">
+            <div class="control">
+              <label for="time"></label>
+              <select name="time" id="time">
+                <option value="">Max Prep Time</option>
+                <option value="0">0 mins</option>
+                <option value="5">5 mins</option>
+                <option value="10">10 mins</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <ul class="recipes__list-container | grid-even-cols mb-1200">
           <!-- added with js -->
         </ul>
       </section>
     </main>
     <footer></footer>
     <script src="./js/layout.js"></script>
+    <script src="./js/recipes.js"></script>
   </body>
 </html>
